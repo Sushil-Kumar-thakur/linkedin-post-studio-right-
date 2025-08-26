@@ -1,0 +1,52 @@
+# -----------------------------
+# Supabase Project Configuration (CLEAN)
+# -----------------------------
+
+# Linked project id (from Supabase dashboard)
+project_id = "krdehujxbhlmpifpjprr"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[auth]
+enabled = true
+site_url = "https://krdehujxbhlmpifpjprr.supabase.co"   # ✅ Your cloud project URL
+additional_redirect_urls = [
+  "http://localhost:3000", 
+  "https://localhost:3000",
+  "https://krdehujxbhlmpifpjprr.supabase.co"
+]
+jwt_expiry = 3600
+enable_manual_linking = false
+
+# ✅ Functions (Edge functions JWT settings)
+[functions.generate-posts]
+verify_jwt = true
+
+[functions.analyze-brand]
+verify_jwt = true
+
+[functions.ai-copilot]
+verify_jwt = true
+
+[functions.trigger-n8n-webhook]
+verify_jwt = true
+
+[functions.receive-company-profile]
+verify_jwt = false  # ⚠️ Public
+
+[functions.receive-generated-posts]
+verify_jwt = false  # ⚠️ Public
+
+[functions.trigger-brand-voice-analysis]
+verify_jwt = true
+
+[functions.receive-brand-voice-analysis]
+verify_jwt = false  # ⚠️ Public
+
+[functions.setup-webhook-config]
+verify_jwt = true
