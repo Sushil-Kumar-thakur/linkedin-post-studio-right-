@@ -16,7 +16,7 @@ import Settings from "./pages/Settings";
 import Admin from "./pages/Admin";
 import ApiDocs from "./pages/ApiDocs";
 import NotFound from "./pages/NotFound";
-
+import TestSupabase from "./testSupabase";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -39,6 +39,8 @@ const App = () => (
               <Route path="/admin" element={<Admin />} />
               <Route path="/api-docs" element={<ApiDocs />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/test" element={<TestSupabase />} />
+
             </Routes>
           </BrowserRouter>
         </AuthProvider>
@@ -48,3 +50,21 @@ const App = () => (
 );
 
 export default App;
+
+
+// import { useEffect } from 'react';
+// import { testSupabaseConnection } from './testSupabase';
+
+// function App() {
+//   useEffect(() => {
+//     testSupabaseConnection();
+//   }, []);
+
+//   return (
+//     <div className="p-4">
+//       <h1 className="text-xl font-bold">Supabase Connection Test</h1>
+//     </div>
+//   );
+// }
+
+// export default App;

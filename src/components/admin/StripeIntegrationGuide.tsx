@@ -333,14 +333,14 @@ export default function StripeIntegrationGuide() {
                   <Label>Webhook Endpoint URL</Label>
                   <div className="flex gap-2">
                     <Input
-                      value="https://ntggobgawyqglpyhwgsy.supabase.co/functions/v1/stripe-webhook"
+                      value="https://krdehujxbhlmpifpjprr.supabase.co/functions/v1/stripe-webhook"
                       readOnly
                       className="bg-muted"
                     />
                     <Button
                       variant="outline"
                       size="sm"
-                      onClick={() => copyToClipboard("https://ntggobgawyqglpyhwgsy.supabase.co/functions/v1/stripe-webhook")}
+                      onClick={() => copyToClipboard("https://krdehujxbhlmpifpjprr.supabase.co/functions/v1/stripe-webhook")}
                     >
                       <Copy className="h-4 w-4" />
                     </Button>

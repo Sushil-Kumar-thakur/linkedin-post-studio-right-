@@ -34,7 +34,7 @@ const endpoints: EndpointDoc[] = [
     description: "Retrieve all company profiles for the authenticated user",
     auth: "Required",
     parameters: [],
-    exampleRequest: `curl -X GET 'https://ntggobgawyqglpyhwgsy.supabase.co/functions/v1/get-company-profiles' \\
+    exampleRequest: `curl -X GET 'https://krdehujxbhlmpifpjprr.supabase.co/functions/v1/get-company-profiles' \\
   -H 'Authorization: Bearer YOUR_TOKEN' \\
   -H 'Content-Type: application/json'`,
     exampleResponse: `{
@@ -69,7 +69,7 @@ const endpoints: EndpointDoc[] = [
         description: "The unique identifier of the company profile"
       }
     ],
-    exampleRequest: `curl -X GET 'https://ntggobgawyqglpyhwgsy.supabase.co/functions/v1/get-company-profile-details/123e4567-e89b-12d3-a456-426614174000' \\
+    exampleRequest: `curl -X GET 'https://krdehujxbhlmpifpjprr.supabase.co/functions/v1/get-company-profile-details/123e4567-e89b-12d3-a456-426614174000' \\
   -H 'Authorization: Bearer YOUR_TOKEN' \\
   -H 'Content-Type: application/json'`,
     exampleResponse: `{
@@ -131,7 +131,7 @@ const endpoints: EndpointDoc[] = [
         description: "Company website URL"
       }
     ],
-    exampleRequest: `curl -X POST 'https://ntggobgawyqglpyhwgsy.supabase.co/functions/v1/update-company-profile' \\
+    exampleRequest: `curl -X POST 'https://krdehujxbhlmpifpjprr.supabase.co/functions/v1/update-company-profile' \\
   -H 'Authorization: Bearer YOUR_TOKEN' \\
   -H 'Content-Type: application/json' \\
   -d '{
@@ -176,7 +176,7 @@ const endpoints: EndpointDoc[] = [
         description: "ID of existing conversation (creates new if not provided)"
       }
     ],
-    exampleRequest: `curl -X POST 'https://ntggobgawyqglpyhwgsy.supabase.co/functions/v1/ai-copilot' \\
+    exampleRequest: `curl -X POST 'https://krdehujxbhlmpifpjprr.supabase.co/functions/v1/ai-copilot' \\
   -H 'Authorization: Bearer YOUR_TOKEN' \\
   -H 'Content-Type: application/json' \\
   -d '{
@@ -221,7 +221,7 @@ const endpoints: EndpointDoc[] = [
         description: "URL to redirect to if payment is cancelled"
       }
     ],
-    exampleRequest: `curl -X POST 'https://ntggobgawyqglpyhwgsy.supabase.co/functions/v1/create-checkout-session' \\
+    exampleRequest: `curl -X POST 'https://krdehujxbhlmpifpjprr.supabase.co/functions/v1/create-checkout-session' \\
   -H 'Authorization: Bearer YOUR_TOKEN' \\
   -H 'Content-Type: application/json' \\
   -d '{

@@ -1,0 +1,11 @@
+﻿{
+  "platforms": ["linkedin"],
+  "topic": "Test: AI post about product launch",
+  "keywords": "AI,product,launch",
+  "tone": "professional",
+  "length": "short",
+  "includeHashtags": true,
+  "includeEmojis": false,
+  "customInstructions": "",
+  "companyProfile": null
+}

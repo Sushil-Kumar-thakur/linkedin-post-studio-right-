@@ -161,7 +161,7 @@ export default function PostGenerator() {
 
       // Call the n8n webhook via edge function
       const { data: webhookResult, error: functionError } =
-        await supabase.functions.invoke("trigger-n8n-webhook", {
+        await supabase.functions.invoke("generate-posts", {
           body: {
             platforms: formData.platforms,
             topic: formData.topic,
@@ -177,7 +177,7 @@ export default function PostGenerator() {
 
       if (functionError) {
         console.error("N8N webhook error:", functionError);
-        toast.error("Failed to trigger post generation workflow");
+        toast.error("Failed to trigger post generation workflow --");
         return;
       }
 
